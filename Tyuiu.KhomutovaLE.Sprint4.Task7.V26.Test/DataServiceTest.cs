@@ -1,0 +1,20 @@
+﻿using Tyuiu.KhomutovaLE.Sprint4.Task7.V26.Lib;
+
+namespace Tyuiu.KhomutovaLE.Sprint4.Task7.V26.Test
+{
+    [TestClass]
+    public sealed class DataServiceTest
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            DataService ds = new DataService();
+            int n = 5;
+            int m = 3;
+            string str = "351268459614723";
+            int res = ds.Calculate(n, m, str);
+            int wait = 18432;
+            Assert.AreEqual(wait, res);
+        }
+    }
+}
