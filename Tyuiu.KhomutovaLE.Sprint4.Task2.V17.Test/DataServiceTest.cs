@@ -1,4 +1,6 @@
-﻿namespace Tyuiu.KhomutovaLE.Sprint4.Task2.V17.Test
+﻿using Tyuiu.KhomutovaLE.Sprint4.Task2.V17.Lib;
+
+namespace Tyuiu.KhomutovaLE.Sprint4.Task2.V17.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -6,6 +8,11 @@
         [TestMethod]
         public void TestMethod1()
         {
+            DataService ds = new DataService();
+            int[] array = { 5, 6, 8, 3, 5, 2, 4, 4, 5 };
+            int res = ds.Calculate(array);
+            int wait = 375;
+            Assert.AreEqual(wait, res);
         }
     }
 }
